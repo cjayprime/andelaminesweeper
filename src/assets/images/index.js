@@ -1,0 +1,9 @@
+export { default as cancel } from './cancel.png';
+export { default as explode } from './explode.png';
+export { default as flag } from './flag.png';
+export { default as mine } from './mine.png';
+export { default as timer } from './timer.png';
+export { default as reload } from './reload.png';
+export { default as checked } from './checked.png';
+export { default as shovel } from './shovel.png';
+export { default as arrowDown } from './arrowDown.png';
