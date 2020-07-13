@@ -12,10 +12,10 @@ export default class Container extends Component{
     // TODO: Move all shared state vars except picker to
     // a redux store both here and in child components
     state = {
-        rows: 20,
-        columns: 20,
-        mines: 100,
-        difficulty: 'Hard',
+        rows: 5,
+        columns: 5,
+        mines: 5,
+        difficulty: 'Easy',
         picker: false,
         clear: false
     };

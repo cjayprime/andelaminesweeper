@@ -24,8 +24,7 @@ export default class Board extends Component{
         dig: null,
         flag: null,
         won: false,
-        lost: false,
-        orientation: ''
+        lost: false
     };
 
     win = () => {
