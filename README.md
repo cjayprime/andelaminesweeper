@@ -1,0 +1,1 @@
+Combines both functional and class components
