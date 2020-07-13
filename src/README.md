@@ -1,3 +1,5 @@
+### This stipuates the full specifications as given to me
+
 ## React Native Minesweeper
 
 Build a minesweeper in React Native (https://en.wikipedia.org/wiki/Minesweeper_(video_game)).
