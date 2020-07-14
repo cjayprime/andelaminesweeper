@@ -6,13 +6,13 @@ const style = {
   },
   image: {
     width: '75%',
-    height: '75%'
+    height: '75%',
   },
   text: {
     color: '#FFF',
     fontSize: 10,
-    fontWeight: "bold"
-  }
+    fontWeight: 'bold',
+  },
 };
 
 export default style;
