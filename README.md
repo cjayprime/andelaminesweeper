@@ -1,11 +1,5 @@
 ##### Build instructions  #####
-1. Open the ```hello-react-native``` directory
-2. Copy the mobile key from your account settings page from your LaunchDarkly dashboard into `App.js`.
-3. Run `npm install` in `hello-react-native`. This should download and create the directories for the project.
-4. Run `npm run start` to start the server to deliver the bundle url. Make sure this is running before you start your application. 
-
-##### iOS specific build instructions #####
-1. Run your application through the Simulator or on a real device.
+To run this project follow the instructions at https://reactnative.dev/docs/environment-setup
 
 <h1 align="center">
   <a href="https://reactnative.dev/">
