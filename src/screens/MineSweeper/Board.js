@@ -25,7 +25,7 @@ export default class Board extends Component {
     const {toggleTimer} = this.props;
     toggleTimer();
     this.setState({
-      win: true,
+      won: true,
     });
   };
 
