@@ -41,13 +41,16 @@ export default class Container extends Component {
     },
     set: () => {
       let {seconds} = {...this.state};
-      ++seconds;
-      let countdown = this.time.pad(parseInt(seconds / 60, 10));
-      countdown += ':' + this.time.pad(seconds % 60);
-      this.setState({
-        countdown,
-        seconds,
-      });
+      let {pause} = this.props;
+      if (pause === false) {
+        ++seconds;
+        let countdown = this.time.pad(parseInt(seconds / 60, 10));
+        countdown += ':' + this.time.pad(seconds % 60);
+        this.setState({
+          countdown,
+          seconds,
+        });
+      }
     },
   };
 

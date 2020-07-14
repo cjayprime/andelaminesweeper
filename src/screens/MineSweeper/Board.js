@@ -22,12 +22,16 @@ export default class Board extends Component {
   };
 
   win = () => {
+    const {toggleTimer} = this.props;
+    toggleTimer();
     this.setState({
       win: true,
     });
   };
 
   lose = () => {
+    const {toggleTimer} = this.props;
+    toggleTimer();
     this.setState({
       lost: true,
     });
@@ -35,8 +39,6 @@ export default class Board extends Component {
 
   popover = ({width, height, px, py, dig, flag}) => {
     this.setState({
-      // width,
-      // height,
       top: py,
       left: px,
       dig,
@@ -76,6 +78,14 @@ export default class Board extends Component {
     };
     const borderTop = top > 0.5 * windowHeight ? 30 : 0;
     const borderBottom = top > 0.5 * windowHeight ? 0 : 30;
+    const style = {
+      top: position.top,
+      left: position.left,
+      borderTopLeftRadius: borderTop,
+      borderTopRightRadius: borderTop,
+      borderBottomLeftRadius: borderBottom,
+      borderBottomRightRadius: borderBottom,
+    };
     return (
       <>
         <View style={[Style.board.container, {paddingTop}]}>
@@ -93,18 +103,7 @@ export default class Board extends Component {
             clear={clear}
           />
         </View>
-        <View
-          style={[
-            Style.board.popoverOptions,
-            {
-              top: position.top,
-              left: position.left,
-              borderTopLeftRadius: borderTop,
-              borderTopRightRadius: borderTop,
-              borderBottomLeftRadius: borderBottom,
-              borderBottomRightRadius: borderBottom,
-            },
-          ]}>
+        <View style={[Style.board.popoverOptions, style]}>
           <TouchableOpacity
             style={Style.board.popoverCancel}
             activeOpacity={0.6}

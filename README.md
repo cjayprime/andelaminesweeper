@@ -1,5 +1,9 @@
 ##### Build instructions  #####
-To run this project follow the instructions at https://reactnative.dev/docs/environment-setup
+To run this project: 
+1. follow the setup instructions at https://reactnative.dev/docs/environment-setup
+2. Run `git clone https://github.com/cjayprime/andelaminesweeper.git`
+3. For Android run `npx react-native run-android` OR for iOS `run npx react-native run-ios`
+4. (Optional) If you do not have an emulator run `npx react-native start` then connect via USB on Android (NB: You'll need ADB for it to work)
 
 <h1 align="center">
   <a href="https://reactnative.dev/">
