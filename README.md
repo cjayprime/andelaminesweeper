@@ -1,5 +1,5 @@
 ##### Build instructions  #####
-To run this project follow the instructions at https://reactnative.dev/docs/environment-setup
+To run this project: follow the instructions at https://reactnative.dev/docs/environment-setup fo
 
 <h1 align="center">
   <a href="https://reactnative.dev/">

@@ -18,11 +18,18 @@ export default class Container extends Component {
     difficulty: 'Easy',
     picker: false,
     clear: false,
+    pause: false,
   };
 
   toggle = () => {
     this.setState({
       picker: !this.state.picker,
+    });
+  };
+
+  toggleTimer = () => {
+    this.setState({
+      pause: !this.state.pause,
     });
   };
 
@@ -49,6 +56,7 @@ export default class Container extends Component {
         columns,
         mines,
         difficulty,
+        pause: false,
         clear: !this.state.clear,
       },
       reset ? null : this.toggle,
@@ -56,7 +64,7 @@ export default class Container extends Component {
   };
 
   render() {
-    const {rows, columns, mines, difficulty, picker, clear} = this.state;
+    const {rows, columns, mines, difficulty, picker, clear, pause} = this.state;
     return (
       <View style={Style.app}>
         <Header
@@ -65,11 +73,13 @@ export default class Container extends Component {
           difficulty={difficulty}
           onChange={this.setDifficulty}
           mines={mines}
+          pause={pause}
         />
         <MineSweeper
           rows={rows}
           columns={columns}
           mines={mines}
+          toggleTimer={this.toggleTimer}
           clear={clear}
           reset={() => this.setDifficulty(difficulty, true)}
         />
