@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Test Stability 1`] = `
+Array [
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#000",
+        "elevation": 100,
+        "height": "100%",
+        "left": 0,
+        "opacity": 0.5,
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+        "zIndex": 100000000000,
+      }
+    }
+  />,
+  <View
+    style={
+      Object {
+        "backgroundColor": "#FFF",
+        "borderRadius": 10,
+        "elevation": 100,
+        "left": "20%",
+        "padding": 5,
+        "position": "absolute",
+        "top": "30%",
+        "width": "60%",
+        "zIndex": 50000000000000000,
+      }
+    }
+  >
+    <View />
+  </View>,
+]
+`;

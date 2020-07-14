@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Animation Test Stability 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFF",
+      "borderRadius": 10,
+      "elevation": 100,
+      "left": "20%",
+      "padding": 5,
+      "position": "absolute",
+      "top": "30%",
+      "transform": Array [
+        Object {
+          "translateY": 1334,
+        },
+        Object {
+          "scaleY": 1,
+        },
+      ],
+      "width": "60%",
+      "zIndex": 100000000000,
+    }
+  }
+>
+  <View />
+</View>
+`;

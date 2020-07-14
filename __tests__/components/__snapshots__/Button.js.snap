@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Test Stability 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "marginTop": -10,
+      "width": "30%",
+    }
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#000",
+        "borderRadius": 5,
+        "elevation": 3,
+        "flexDirection": "row",
+        "height": 30.799999999999997,
+        "justifyContent": "space-around",
+        "marginTop": 10,
+        "opacity": 1,
+        "width": "85%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#FFFFFF",
+          "fontSize": 15,
+        }
+      }
+    >
+      Easy
+    </Text>
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/arrowDown.png",
+        }
+      }
+      style={
+        Object {
+          "height": 15,
+          "width": 15,
+        }
+      }
+    />
+  </View>
+</View>
+`;
