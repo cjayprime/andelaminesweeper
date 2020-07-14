@@ -129,13 +129,14 @@ export default class Tiles extends Component {
   };
 
   dig = (x, y) => {
+    const {lose, win} = this.props;
     var {tiles, columns, rows} = {...this.state};
     var newTiles = [];
 
     if (tiles[x][y].flag === false) {
       if (tiles[x][y].value === 'mine') {
         // A bomb was clicked
-        this.props.lose();
+        lose();
         // Refresh game
         this.restart();
         return;
@@ -164,7 +165,7 @@ export default class Tiles extends Component {
             }
           }
           if (unRevealedTiles === 0) {
-            this.props.won();
+            win();
           }
         },
       );
