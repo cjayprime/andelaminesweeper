@@ -7,16 +7,13 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-} from 'react-native';
+import {SafeAreaView, StatusBar} from 'react-native';
 
 import ApplicationBase from './src';
 
-
 const App = () => {
-  return (//1430B7
+  return (
+    //1430B7
     <>
       <StatusBar barStyle="dark-content" backgroundColor="#FFFFFF" />
       <SafeAreaView>
